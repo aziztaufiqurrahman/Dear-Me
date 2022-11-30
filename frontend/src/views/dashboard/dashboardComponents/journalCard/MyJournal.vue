@@ -55,7 +55,9 @@
     <v-expand-transition>
       <div v-show="show">
         <v-divider></v-divider>
-        <!-- <p>{{ `${date.getDate()}-${date.getMonth()+1}-${date.getFullYear()}` }}</p> -->
+        <v-card-actions>
+          Today : {{`${date.getDate()}-${date.getMonth()+1}-${date.getFullYear()}` }}
+        </v-card-actions> 
         <v-card-actions>
           <input type="date" v-model="date" required @change="changeDate()"/>
           <!-- <span>{{moment(date).format('YYYY-MM-DD')}}</span> -->
