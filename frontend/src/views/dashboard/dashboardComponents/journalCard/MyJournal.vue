@@ -35,6 +35,13 @@
       >
         <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
       </v-btn>
+      <!-- <v-btn
+        color="orange lighten-2"
+        text
+        @click="show = !show"
+      >
+        Next
+      </v-btn>
 
       <v-btn
         color="orange lighten-2"
@@ -42,14 +49,7 @@
         @click="show = !show"
       >
         Prev
-      </v-btn>
-      <v-btn
-        color="orange lighten-2"
-        text
-        @click="show = !show"
-      >
-        Next
-      </v-btn>
+      </v-btn> -->
     </v-card-actions>
 
     <v-expand-transition>
@@ -69,7 +69,7 @@
                           class="greyy"
                           color="cyan"
                           auto-grow
-                          variant="standard"
+                          variant="outlined"
                           rows="5"
                           clearable
                           label="How are you today"
@@ -105,7 +105,7 @@
                           class="greyy"
                           color="cyan"
                           auto-grow
-                          variant="standard"
+                          variant="outlined"
                           rows="5"
                           clearable
                           label="How are you today"
@@ -135,7 +135,7 @@
                           class="greyy"
                           color="cyan"
                           auto-grow
-                          variant="standard"
+                          variant="outlined"
                           rows="5"
                           clearable
                           label="How are you today"
@@ -167,7 +167,7 @@
                           class="greyy"
                           color="cyan"
                           auto-grow
-                          variant="standard"
+                          variant="outlined"
                           rows="5"
                           clearable
                           label="How are you today"
@@ -197,7 +197,7 @@
                           class="greyy"
                           color="cyan"
                           auto-grow
-                          variant="standard"
+                          variant="outlined"
                           rows="5"
                           clearable
                           label="How are you today"
