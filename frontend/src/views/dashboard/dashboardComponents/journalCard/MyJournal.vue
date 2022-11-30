@@ -35,6 +35,13 @@
       >
         <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
       </v-btn>
+      <!-- <v-btn
+        color="orange lighten-2"
+        text
+        @click="show = !show"
+      >
+        Next
+      </v-btn>
 
       <v-btn
         color="orange lighten-2"
@@ -42,6 +49,7 @@
         @click="changeDate(-1)"
       >
         Prev
+<<<<<<< HEAD
       </v-btn>
       <v-btn
         color="orange lighten-2"
@@ -50,6 +58,9 @@
       >
         Next
       </v-btn>
+=======
+      </v-btn> -->
+>>>>>>> 159f8bdcda0a01b78ad553996c1ddb2e743fe9ac
     </v-card-actions>
 
     <v-expand-transition>
