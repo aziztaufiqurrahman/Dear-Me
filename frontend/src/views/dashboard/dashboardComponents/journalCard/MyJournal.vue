@@ -39,14 +39,14 @@
       <v-btn
         color="orange lighten-2"
         text
-        @click="show = !show"
+        @click="changeDate(-1)"
       >
         Prev
       </v-btn>
       <v-btn
         color="orange lighten-2"
         text
-        @click="show = !show"
+        @click="changeDate(1)"
       >
         Next
       </v-btn>
@@ -338,7 +338,12 @@ methods: {
       window.location.reload()
     )
   },
-  changeDate(){
+  changeDate(n = 0){
+    if (n != 0){
+      let ymd = this.date.split("-")
+      ymd[2] = parseInt(ymd[2]) + n
+      this.date = ymd.join("-")
+    }
     this.axios.get("http://localhost:5000/dataDate/" + this.date)
     .then(res => {
       if(res.data.length != 0){
@@ -362,6 +367,11 @@ methods: {
         this.gridSix = ""
       }
     })
+  },
+  addDate(n){
+    console.log(typeof(this.date))
+    this.date.setDate(this.date.getDate() + n)
+    console.log(date)
   }
 
 },
