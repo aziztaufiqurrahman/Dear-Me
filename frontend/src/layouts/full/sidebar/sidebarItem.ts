@@ -10,8 +10,8 @@ export default [
     to: "/ui-components/alert",
   },
   {
-    title: "History",
-    icon: "mdi-history",
+    title: "About Us",
+    icon: "mdi-account-multiple",
     to: "/ui-components/buttons",
   },
   // {
