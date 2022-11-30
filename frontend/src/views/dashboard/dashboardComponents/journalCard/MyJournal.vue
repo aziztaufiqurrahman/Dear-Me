@@ -69,7 +69,7 @@
                           class="greyy"
                           color="cyan"
                           auto-grow
-                          variant="outlined"
+                          variant="standard"
                           rows="5"
                           clearable
                           label="How are you today"
@@ -105,7 +105,7 @@
                           class="greyy"
                           color="cyan"
                           auto-grow
-                          variant="outlined"
+                          variant="standard"
                           rows="5"
                           clearable
                           label="How are you today"
@@ -135,7 +135,7 @@
                           class="greyy"
                           color="cyan"
                           auto-grow
-                          variant="outlined"
+                          variant="standard"
                           rows="5"
                           clearable
                           label="How are you today"
@@ -167,7 +167,7 @@
                           class="greyy"
                           color="cyan"
                           auto-grow
-                          variant="outlined"
+                          variant="standard"
                           rows="5"
                           clearable
                           label="How are you today"
@@ -197,7 +197,7 @@
                           class="greyy"
                           color="cyan"
                           auto-grow
-                          variant="outlined"
+                          variant="standard"
                           rows="5"
                           clearable
                           label="How are you today"
