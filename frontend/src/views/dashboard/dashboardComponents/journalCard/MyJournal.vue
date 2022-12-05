@@ -30,13 +30,6 @@
       <v-spacer></v-spacer>
 
       <v-btn
-        icon
-        @click="show = !show"
-      >
-        <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-      </v-btn>
-
-      <v-btn
         color="orange lighten-2"
         text
         @click="changeDate(-1)"
