@@ -28,7 +28,7 @@ const router = createRouter({
             import("@/views/ui-components/Alerts.vue"),
         },
         {
-          name: "History",
+          name: "About Us",
           path: "ui-components/buttons",
           component: () =>
             import("@/views/ui-components/Buttons.vue"),
