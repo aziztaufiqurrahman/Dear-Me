@@ -70,28 +70,21 @@
                           label="How are you today"
                           v-model= "gridOne"
                         ></v-textarea>
-                      <v-spacer></v-spacer>
+                        <v-spacer></v-spacer>
                           <v-btn
                               color="white"
                               text
-                              @click="deletePost()"
+                              @click="dialog = false"
                           >
-                              Delete
+                              
                           </v-btn>
-                          <v-btn v-if="mode"
+                          <v-btn
                               color="white"
                               text
-                              @click="submitPost()"
+                              @click="dialog = false"
                           >
-                              Submit
-                          </v-btn>
-                          <v-btn v-else
-                              color="white"
-                              text
-                              @click="updatePost()"
-                          >
-                              Update
-                          </v-btn>
+                              
+                      </v-btn>
                    </v-sheet>
                     </v-col>
                     <v-col>
@@ -246,6 +239,28 @@
                       </v-sheet>
                     </v-col>
                   </v-row>
+                  <v-spacer></v-spacer>
+                          <v-btn
+                              color="white"
+                              text
+                              @click="deletePost()"
+                          >
+                              Delete
+                          </v-btn>
+                          <v-btn v-if="mode"
+                              color="white"
+                              text
+                              @click="submitPost()"
+                          >
+                              Submit
+                          </v-btn>
+                          <v-btn v-else
+                              color="white"
+                              text
+                              @click="updatePost()"
+                          >
+                              Update
+                          </v-btn>
                 </v-container>
       </div>
     </v-expand-transition>
