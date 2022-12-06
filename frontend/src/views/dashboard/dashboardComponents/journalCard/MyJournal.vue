@@ -103,7 +103,7 @@
                           variant="outlined"
                           rows="5"
                           clearable
-                          label="How are you today"
+                          label="Where are you going today"
                           v-model= "gridTwo"
                         ></v-textarea>
                       <v-spacer></v-spacer>
@@ -133,7 +133,7 @@
                           variant="outlined"
                           rows="5"
                           clearable
-                          label="How are you today"
+                          label="What are your activities today"
                           v-model= "gridThree"
                         ></v-textarea>
                       <v-spacer></v-spacer>
@@ -165,7 +165,7 @@
                           variant="outlined"
                           rows="5"
                           clearable
-                          label="How are you today"
+                          label="Who made you happy today"
                           v-model= "gridFour"
                         ></v-textarea>
                       <v-spacer></v-spacer>
@@ -195,7 +195,7 @@
                           variant="outlined"
                           rows="5"
                           clearable
-                          label="How are you today"
+                          label="who pissed you off today"
                           v-model= "gridFive"
                         ></v-textarea>
                       <v-spacer></v-spacer>
@@ -225,7 +225,7 @@
                           variant="outlined"
                           rows="5"
                           clearable
-                          label="How are you today"
+                          label="what are you grateful for today"
                           v-model= "gridSix"
                         ></v-textarea>
                       <v-spacer></v-spacer>
