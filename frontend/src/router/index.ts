@@ -1,15 +1,31 @@
 import { createRouter, createWebHistory } from "vue-router";
+// import User from "@/views/dashboard/User.vue";
 // import Login from "@/views/dashboard/Login.vue";
 
 const router = createRouter({
   //history: createWebHistory(import.meta.env.BASE_URL),
   history: createWebHistory("/"),
   routes: [
-  //   {
-  //     path: "/",
-  //     name: "login",
-  //     component: Login,
-  //  },
+      {
+        path: "/",
+        redirect: "/dashboard",
+        name: "login",
+        component: () =>
+                import("@/views/dashboard/Login.vue"),
+        meta: {
+          requiresVisitor: true,
+        },
+    },
+    {
+        path: "/user",
+        redirect: "/dashboard",
+        name: "user",
+        component: () =>
+                import("@/views/dashboard/User.vue"),
+        meta: {
+          requiresAuth: true,
+        },
+    },
     {
       path: "/",
       redirect: "/dashboard",
@@ -28,7 +44,7 @@ const router = createRouter({
             import("@/views/ui-components/Alerts.vue"),
         },
         {
-          name: "History",
+          name: "About Us",
           path: "ui-components/buttons",
           component: () =>
             import("@/views/ui-components/Buttons.vue"),

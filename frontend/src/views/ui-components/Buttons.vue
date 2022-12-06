@@ -1,130 +1,140 @@
 <template>
-  <div class="d-flex" id="app">
-    <v-flex v-for="item in items" :key="item.id" xs12 md6 lg3>
-      <v-card
-      width="344"
-      position="relative"
-    >
-      <v-img
-        src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-        height="193.5px"
-      ></v-img>
+  <v-flex d-flex xs12 sm6 md4>
+ <v-card
+   class="mx-auto my-12"
+   max-width="374"
+ >
+   <template slot="progress">
+     <v-progress-linear
+       color="deep-purple"
+       height="10"
+       indeterminate
+     ></v-progress-linear>
+   </template>
 
-<<<<<<< Updated upstream
-      <v-card-title>
-        {{item.title}}
-      </v-card-title>
-=======
-import ButtonsDefault from "@/components/vuetifyComponents/buttons/ButtonsDefault.vue";
-// import ButtonsOutlined from "@/components/vuetifyComponents/buttons/ButtonsOutlined.vue";
-// import ButtonsBlock from "@/components/vuetifyComponents/buttons/ButtonsBlock.vue";
-// import ButtonsIcon from "@/components/vuetifyComponents/buttons/ButtonsIcon.vue";
-// import ButtonsRounded from "@/components/vuetifyComponents/buttons/ButtonsRounded.vue";
-// import ButtonsSizing from "@/components/vuetifyComponents/buttons/ButtonsSizing.vue";
->>>>>>> Stashed changes
+   <v-img
+     height="250"
+     src="https://akademik.polban.ac.id/fotomhsrekap/201524010.jpg"
+   ></v-img>
 
-      <v-card-subtitle>
-        {{item.date}}
-      </v-card-subtitle>
+   <v-card-title>
+     <v-row
+       class="justify-center"
+     >Hasanah
+     </v-row>
+   </v-card-title>
 
-      <v-card-actions>
-        <v-btn
-          color="orange lighten-2"
-          text
-          @click="dialog = true"
-        >
-          More
-        </v-btn>
+   <v-card-text>
+     <v-row
+       class="justify-center"
+     >201524010
+     </v-row>
+   </v-card-text>
+ </v-card>
+</v-flex>
 
-        <v-spacer></v-spacer>
+<v-flex d-flex xs12 sm6 md4>
+ <v-card
+   class="mx-auto my-12"
+   max-width="374"
+ >
+   <template slot="progress">
+     <v-progress-linear
+       color="deep-purple"
+       height="10"
+       indeterminate
+     ></v-progress-linear>
+   </template>
 
-        <v-btn
-        @click="dialog = true"
-        >
-          <v-icon>{{ 'mdi-chevron-right' }}</v-icon>
-        </v-btn>
-      </v-card-actions>
+   <v-img
+     height="250"
+     src="https://akademik.polban.ac.id/fotomhsrekap/201524014.jpg"
+   ></v-img>
 
-      <v-expand-transition>
-        <div v-show="show">
-          <v-divider></v-divider>
+   <v-card-title>
+     <v-row
+       class="justify-center"
+     >Taufiq
+     </v-row>
+   </v-card-title>
 
-          <v-card-text>
-            I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.
-          </v-card-text>
-        </div>  
-      </v-expand-transition>
-    </v-card>
-  </v-flex>
-  
-  <v-dialog
-      class="mx-auto"
-      v-model="dialog"
-      width="500"
-    >
-      <v-card
-      class="mx-auto">
-        <v-card-title
-          class="headline grey lighten-2"
-          primary-title
-        >
-          Privacy Policy
-        </v-card-title>
+   <v-card-text>
+     <v-row
+       class="justify-center"
+     >201524014
+     </v-row>
+   </v-card-text>
+ </v-card>
+</v-flex>
 
-        <v-card-text>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </v-card-text>
+<v-flex d-flex xs12 sm6 md4>
+ <v-card
+   class="mx-auto my-12"
+   max-width="374"
+ >
+   <template slot="progress">
+     <v-progress-linear
+       color="deep-purple"
+       height="10"
+       indeterminate
+     ></v-progress-linear>
+   </template>
 
-        <v-divider></v-divider>
+   <v-img
+     height="250"
+     src="https://akademik.polban.ac.id/fotomhsrekap/201524020.jpg"
+   ></v-img>
 
-        <v-card-actions>
-          <v-spacer></v-spacer>
-          <v-btn
-            color="primary"
-            text
-            @click="dialog = false"
-          >
-            I accept
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-dialog>
-  </div>
+   <v-card-title>
+     <v-row
+       class="justify-center"
+     >Nabiilah
+     </v-row>
+   </v-card-title>
+
+   <v-card-text>
+     <v-row
+       class="justify-center"
+     >201524020
+     </v-row>
+   </v-card-text>
+ </v-card>
+</v-flex>
+
+<v-flex d-flex xs12 sm6 md4>
+ <v-card
+   class="mx-auto my-12"
+   max-width="374"
+ >
+   <template slot="progress">
+     <v-progress-linear
+       color="deep-purple"
+       height="10"
+       indeterminate
+     ></v-progress-linear>
+   </template>
+
+   <v-img
+     height="250"
+     src="https://akademik.polban.ac.id/fotomhsrekap/201524031.jpg"
+   ></v-img>
+
+   <v-card-title>
+     <v-row
+       class="justify-center"
+     >Syelvie
+     </v-row>
+   </v-card-title>
+
+   <v-card-text>
+     <v-row
+       class="justify-center"
+     >201524031
+     </v-row>
+   </v-card-text>
+ </v-card>
+</v-flex>
 </template>
 
-<script >
-//setup lang="ts"
-import { ref } from "vue";
-// import BaseCard from "@/components/BaseCard.vue";
 
-// import ButtonsDefault from "@/components/vuetifyComponents/buttons/ButtonsDefault.vue";
-// import ButtonsOutlined from "@/components/vuetifyComponents/buttons/ButtonsOutlined.vue";
-// import ButtonsBlock from "@/components/vuetifyComponents/buttons/ButtonsBlock.vue";
-// import ButtonsIcon from "@/components/vuetifyComponents/buttons/ButtonsIcon.vue";
-// import ButtonsRounded from "@/components/vuetifyComponents/buttons/ButtonsRounded.vue";
-// import ButtonsSizing from "@/components/vuetifyComponents/buttons/ButtonsSizing.vue";\
-export default {
-    data () {
-      return {
-        dialog: false,
-        items:[
-          {
-            id:1,
-            title:"Reminder Kerja",
-            date:"22-04-2020"
-          },
-          {
-            id:2,
-            title:"Hari-hariku",
-            date:"22-04-2022"
-          },
-          {
-            id:3,
-            title:"Ulang Tahunku",
-            date:"22-04-2022"
-          }
-        ]
-    }
-  }
-}
-</script>
+

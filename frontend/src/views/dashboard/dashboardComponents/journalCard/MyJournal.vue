@@ -30,13 +30,6 @@
       <v-spacer></v-spacer>
 
       <v-btn
-        icon
-        @click="show = !show"
-      >
-        <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-      </v-btn>
-
-      <v-btn
         color="orange lighten-2"
         text
         @click="changeDate(-1)"
@@ -77,28 +70,21 @@
                           label="How are you today"
                           v-model= "gridOne"
                         ></v-textarea>
-                      <v-spacer></v-spacer>
+                        <v-spacer></v-spacer>
                           <v-btn
                               color="white"
                               text
-                              @click="deletePost()"
+                              @click="dialog = false"
                           >
-                              Delete
+                              
                           </v-btn>
-                          <v-btn v-if="mode"
+                          <v-btn
                               color="white"
                               text
-                              @click="submitPost()"
+                              @click="dialog = false"
                           >
-                              Submit
-                          </v-btn>
-                          <v-btn v-else
-                              color="white"
-                              text
-                              @click="updatePost()"
-                          >
-                              Update
-                          </v-btn>
+                              
+                      </v-btn>
                    </v-sheet>
                     </v-col>
                     <v-col>
@@ -110,7 +96,7 @@
                           variant="outlined"
                           rows="5"
                           clearable
-                          label="How are you today"
+                          label="Where are you going today"
                           v-model= "gridTwo"
                         ></v-textarea>
                       <v-spacer></v-spacer>
@@ -140,7 +126,7 @@
                           variant="outlined"
                           rows="5"
                           clearable
-                          label="How are you today"
+                          label="What are your activities today"
                           v-model= "gridThree"
                         ></v-textarea>
                       <v-spacer></v-spacer>
@@ -172,7 +158,7 @@
                           variant="outlined"
                           rows="5"
                           clearable
-                          label="How are you today"
+                          label="What made you happy today"
                           v-model= "gridFour"
                         ></v-textarea>
                       <v-spacer></v-spacer>
@@ -202,7 +188,7 @@
                           variant="outlined"
                           rows="5"
                           clearable
-                          label="How are you today"
+                          label="Who pissed you off today"
                           v-model= "gridFive"
                         ></v-textarea>
                       <v-spacer></v-spacer>
@@ -232,7 +218,7 @@
                           variant="outlined"
                           rows="5"
                           clearable
-                          label="How are you today"
+                          label="What are you grateful for today"
                           v-model= "gridSix"
                         ></v-textarea>
                       <v-spacer></v-spacer>
@@ -253,6 +239,28 @@
                       </v-sheet>
                     </v-col>
                   </v-row>
+                  <v-spacer></v-spacer>
+                          <v-btn
+                              color="white"
+                              text
+                              @click="deletePost()"
+                          >
+                              Delete
+                          </v-btn>
+                          <v-btn v-if="mode"
+                              color="white"
+                              text
+                              @click="submitPost()"
+                          >
+                              Submit
+                          </v-btn>
+                          <v-btn v-else
+                              color="white"
+                              text
+                              @click="updatePost()"
+                          >
+                              Update
+                          </v-btn>
                 </v-container>
       </div>
     </v-expand-transition>
