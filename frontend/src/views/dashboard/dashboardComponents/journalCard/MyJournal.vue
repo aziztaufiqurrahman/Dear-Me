@@ -165,7 +165,7 @@
                           variant="outlined"
                           rows="5"
                           clearable
-                          label="Who made you happy today"
+                          label="What made you happy today"
                           v-model= "gridFour"
                         ></v-textarea>
                       <v-spacer></v-spacer>
@@ -195,7 +195,7 @@
                           variant="outlined"
                           rows="5"
                           clearable
-                          label="who pissed you off today"
+                          label="Who pissed you off today"
                           v-model= "gridFive"
                         ></v-textarea>
                       <v-spacer></v-spacer>
@@ -225,7 +225,7 @@
                           variant="outlined"
                           rows="5"
                           clearable
-                          label="what are you grateful for today"
+                          label="What are you grateful for today"
                           v-model= "gridSix"
                         ></v-textarea>
                       <v-spacer></v-spacer>
