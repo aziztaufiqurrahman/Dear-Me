@@ -59,6 +59,7 @@
         
         <v-container class="bg-surface-variant">
                   <v-row no-gutters>
+                    <v-flex d-flex xs12 sm6 md4>
                     <v-col>
                       <v-sheet class="pa-1 ma-1">
                         <v-textarea
@@ -88,6 +89,9 @@
                       </v-btn> -->
                    </v-sheet>
                     </v-col>
+                  </v-flex>
+
+                  <v-flex d-flex xs12 sm6 md4>
                     <v-col>
                       <v-sheet class="pa-1 ma-1">
                           <v-textarea
@@ -117,7 +121,9 @@
                       </v-btn> -->
                       </v-sheet>
                     </v-col>
+                  </v-flex>
 
+                  <v-flex d-flex xs12 sm6 md4>
                     <v-col>
                       <v-sheet class="pa-1 ma-1">
                         <v-textarea
@@ -147,9 +153,11 @@
                       </v-btn> -->
                       </v-sheet>
                     </v-col>
+                  </v-flex>
 
                     <v-responsive width="100%"></v-responsive>
 
+                    <v-flex d-flex xs12 sm6 md4>
                     <v-col>
                       <v-sheet class="pa-1 ma-1">
                           <v-textarea
@@ -179,7 +187,9 @@
                       </v-btn> -->
                       </v-sheet>
                     </v-col>
+                  </v-flex>
 
+                  <v-flex d-flex xs12 sm6 md4>
                     <v-col>
                       <v-sheet class="pa-1 ma-1">
                         <v-textarea
@@ -209,7 +219,9 @@
                       </v-btn> -->
                       </v-sheet>
                     </v-col>
+                  </v-flex>
 
+                  <v-flex d-flex xs12 sm6 md4>
                     <v-col>
                       <v-sheet class="pa-1 ma-1">
                         <v-textarea
@@ -239,6 +251,7 @@
                       </v-btn> -->
                       </v-sheet>
                     </v-col>
+                  </v-flex>
                   </v-row>
                   <v-spacer></v-spacer>
                           <v-btn 
