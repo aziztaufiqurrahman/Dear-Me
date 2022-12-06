@@ -38,9 +38,14 @@ const userprofile = ref(profile);
         >
          
         </v-list-item>
-        <v-btn block color="secondary" variant="contained" class="mt-4 py-4"
-          >Logout</v-btn
-        >
+        <router-link 
+        to = '/login'
+        tag = v-btn>
+          <v-btn block color="secondary" variant="contained" class="mt-4 py-4"
+            >Logout</v-btn
+          >
+        </router-link>
+        
       </v-list>
     </v-menu>
   </div>

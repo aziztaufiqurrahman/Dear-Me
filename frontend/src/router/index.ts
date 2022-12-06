@@ -1,31 +1,31 @@
 import { createRouter, createWebHistory } from "vue-router";
 // import User from "@/views/dashboard/User.vue";
-// import Login from "@/views/dashboard/Login.vue";
+import Login from "@/views/dashboard/Login.vue";
 
 const router = createRouter({
   //history: createWebHistory(import.meta.env.BASE_URL),
   history: createWebHistory("/"),
   routes: [
-      {
-        path: "/",
-        redirect: "/dashboard",
-        name: "login",
-        component: () =>
-                import("@/views/dashboard/Login.vue"),
-        meta: {
-          requiresVisitor: true,
-        },
-    },
-    {
-        path: "/user",
-        redirect: "/dashboard",
-        name: "user",
-        component: () =>
-                import("@/views/dashboard/User.vue"),
-        meta: {
-          requiresAuth: true,
-        },
-    },
+    //   {
+    //     path: "/login",
+    //     redirect: "/dashboard",
+    //     name: "login",
+    //     component: () =>
+    //             import("@/views/dashboard/Login.vue"),
+    //     meta: {
+    //       requiresVisitor: true,
+    //     },
+    // },
+    // {
+    //     path: "/user",
+    //     redirect: "/dashboard",
+    //     name: "user",
+    //     component: () =>
+    //             import("@/views/dashboard/User.vue"),
+    //     meta: {
+    //       requiresAuth: true,
+    //     },
+    // },
     {
       path: "/",
       redirect: "/dashboard",
@@ -49,6 +49,15 @@ const router = createRouter({
           component: () =>
             import("@/views/ui-components/Buttons.vue"),
         },
+        {
+          path: "/login",
+          name: "login",
+          component: () =>
+                  import("@/views/dashboard/Login.vue"),
+          meta: {
+            requiresVisitor: true,
+          },
+        }
         // {
         //   name: "Cards",
         //   path: "ui-components/cards",
