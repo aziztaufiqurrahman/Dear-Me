@@ -48,20 +48,20 @@
 
    <v-img
      height="250"
-     src="https://akademik.polban.ac.id/fotomhsrekap/201524010.jpg"
+     src="https://akademik.polban.ac.id/fotomhsrekap/201524014.jpg"
    ></v-img>
 
    <v-card-title>
      <v-row
        class="justify-center"
-     >Hasanah
+     >Taufiq
      </v-row>
    </v-card-title>
 
    <v-card-text>
      <v-row
        class="justify-center"
-     >201524010
+     >201524014
      </v-row>
    </v-card-text>
  </v-card>
@@ -82,20 +82,20 @@
 
    <v-img
      height="250"
-     src="https://akademik.polban.ac.id/fotomhsrekap/201524010.jpg"
+     src="https://akademik.polban.ac.id/fotomhsrekap/201524020.jpg"
    ></v-img>
 
    <v-card-title>
      <v-row
        class="justify-center"
-     >Hasanah
+     >Nabiilah
      </v-row>
    </v-card-title>
 
    <v-card-text>
      <v-row
        class="justify-center"
-     >201524010
+     >201524020
      </v-row>
    </v-card-text>
  </v-card>
@@ -116,20 +116,20 @@
 
    <v-img
      height="250"
-     src="https://akademik.polban.ac.id/fotomhsrekap/201524010.jpg"
+     src="https://akademik.polban.ac.id/fotomhsrekap/201524031.jpg"
    ></v-img>
 
    <v-card-title>
      <v-row
        class="justify-center"
-     >Hasanah
+     >Syelvie
      </v-row>
    </v-card-title>
 
    <v-card-text>
      <v-row
        class="justify-center"
-     >201524010
+     >201524031
      </v-row>
    </v-card-text>
  </v-card>
