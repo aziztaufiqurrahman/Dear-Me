@@ -48,12 +48,13 @@
     <v-expand-transition>
       <div v-show="show">
         <v-divider></v-divider>
-        <!-- <p>
-          Date Today : {{`${date.getDate()}-${date.getMonth()+1}-${date.getFullYear()}` }}
-        </p>  -->
+        
+        <v-card-actions>
+          <input type="current.date" v-model="date" readonly />
+        </v-card-actions> 
+
         <v-card-actions>
           <input type="date" v-model="date" required @change="changeDate()"/>
-          <!-- <span>{{moment(date).format('YYYY-MM-DD')}}</span> -->
         </v-card-actions> 
         
         <v-container class="bg-surface-variant">
@@ -71,7 +72,7 @@
                           v-model= "gridOne"
                         ></v-textarea>
                         <v-spacer></v-spacer>
-                          <v-btn
+                          <!-- <v-btn
                               color="white"
                               text
                               @click="dialog = false"
@@ -84,7 +85,7 @@
                               @click="dialog = false"
                           >
                               
-                      </v-btn>
+                      </v-btn> -->
                    </v-sheet>
                     </v-col>
                     <v-col>
@@ -100,7 +101,7 @@
                           v-model= "gridTwo"
                         ></v-textarea>
                       <v-spacer></v-spacer>
-                          <v-btn
+                          <!-- <v-btn
                               color="white"
                               text
                               @click="dialog = false"
@@ -113,7 +114,7 @@
                               @click="dialog = false"
                           >
                               
-                      </v-btn>
+                      </v-btn> -->
                       </v-sheet>
                     </v-col>
 
@@ -130,7 +131,7 @@
                           v-model= "gridThree"
                         ></v-textarea>
                       <v-spacer></v-spacer>
-                          <v-btn
+                          <!-- <v-btn
                               color="white"
                               text
                               @click="dialog = false"
@@ -143,7 +144,7 @@
                               @click="dialog = false"
                           >
                               
-                      </v-btn>
+                      </v-btn> -->
                       </v-sheet>
                     </v-col>
 
@@ -162,7 +163,7 @@
                           v-model= "gridFour"
                         ></v-textarea>
                       <v-spacer></v-spacer>
-                          <v-btn
+                          <!-- <v-btn
                               color="white"
                               text
                               @click="dialog = false"
@@ -175,7 +176,7 @@
                               @click="dialog = false"
                           >
                               
-                      </v-btn>
+                      </v-btn> -->
                       </v-sheet>
                     </v-col>
 
@@ -192,7 +193,7 @@
                           v-model= "gridFive"
                         ></v-textarea>
                       <v-spacer></v-spacer>
-                          <v-btn
+                          <!-- <v-btn
                               color="white"
                               text
                               @click="dialog = false"
@@ -205,7 +206,7 @@
                               @click="dialog = false"
                           >
                               
-                      </v-btn>
+                      </v-btn> -->
                       </v-sheet>
                     </v-col>
 
@@ -222,7 +223,7 @@
                           v-model= "gridSix"
                         ></v-textarea>
                       <v-spacer></v-spacer>
-                          <v-btn
+                          <!-- <v-btn
                               color="white"
                               text
                               @click="dialog = false"
@@ -235,12 +236,12 @@
                               @click="dialog = false"
                           >
                               
-                      </v-btn>
+                      </v-btn> -->
                       </v-sheet>
                     </v-col>
                   </v-row>
                   <v-spacer></v-spacer>
-                          <v-btn
+                          <v-btn 
                               color="white"
                               text
                               @click="deletePost()"

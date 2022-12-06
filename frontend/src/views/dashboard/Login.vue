@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <div id="login">
       <h1 class="greeting"><span>W</span>elcome</h1>
       <h2>Vue Bullet Journal</h2>
@@ -263,4 +263,4 @@
       z-index: 10;
     }
   }
-  </style>
+  </style> -->
