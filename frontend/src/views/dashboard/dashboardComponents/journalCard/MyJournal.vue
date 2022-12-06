@@ -48,10 +48,6 @@
     <v-expand-transition>
       <div v-show="show">
         <v-divider></v-divider>
-        
-        <v-card-actions>
-          <input type="current.date" v-model="date" readonly />
-        </v-card-actions> 
 
         <v-card-actions>
           <input type="date" v-model="date" required @change="changeDate()"/>
