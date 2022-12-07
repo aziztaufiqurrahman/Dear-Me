@@ -49,7 +49,7 @@
       <div v-show="show">
         <v-divider></v-divider>
         <v-card-actions>
-          <label for="start">Today : </label>
+          <label for="start"> Today : </label>
           <input type="current.date" :value="this.currentDate()" readonly>
         </v-card-actions>
     
@@ -256,7 +256,8 @@
                   </v-flex>
                   </v-row>
                   <v-spacer></v-spacer>
-                          <v-btn 
+                  <v-card-actions>
+                          <v-btn
                               color="white"
                               text
                               @click="deletePost()"
@@ -277,6 +278,8 @@
                           >
                               Update
                           </v-btn>
+                  </v-card-actions>
+                          
                 </v-container>
               </v-responsive>
       </div>
