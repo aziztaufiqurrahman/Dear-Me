@@ -47,18 +47,7 @@
 
     <v-expand-transition>
       <div v-show="show">
-        <v-divider></v-divider>
-        <v-card-actions>
-<<<<<<< HEAD
-          <label for="start"> Today : </label>
-          <input type="current.date" :value="this.currentDate()" readonly>
-=======
-          <label for="start">Today : </label>
-          <!-- <input type="current.date" value = "07/12/2022" readonly> -->
-          <input v-model="chooseDate">
->>>>>>> 0515482e0adc5db6fb038778ec25f71f4c1c49b0
-        </v-card-actions>
-    
+        <v-divider></v-divider>    
 
         <v-card-actions>
           <input type="date" v-model="chooseDate" required @change="changeDate()"/>
@@ -262,8 +251,7 @@
                   </v-flex>
                   </v-row>
                   <v-spacer></v-spacer>
-                  <v-card-actions>
-                          <v-btn
+                          <v-btn 
                               color="white"
                               text
                               @click="deletePost()"
@@ -284,8 +272,6 @@
                           >
                               Update
                           </v-btn>
-                  </v-card-actions>
-                          
                 </v-container>
               </v-responsive>
       </div>
