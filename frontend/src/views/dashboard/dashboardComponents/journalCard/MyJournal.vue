@@ -50,11 +50,12 @@
         <v-divider></v-divider>
         <v-card-actions>
           <label for="start"> Today : </label>
-          <input type="current.date" :value="this.currentDate()" readonly>
+          
         </v-card-actions>
     
 
         <v-card-actions>
+          <input type="current.date" :value="this.currentDate()" readonly>
           <input type="date" v-model="date" required @change="changeDate()"/>
         </v-card-actions> 
 
@@ -302,6 +303,7 @@ data: () => ({
   id: "",
   date: new Date(),
   mode: false,
+  // chooseDate: new Date().toISOString().split('T')[0]
 }),
 methods: {
   currentDate() {
