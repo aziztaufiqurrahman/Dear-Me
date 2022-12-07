@@ -50,12 +50,13 @@
         <v-divider></v-divider>
         <v-card-actions>
           <label for="start">Today : </label>
-          <input type="current.date" :value="this.currentDate()" readonly>
+          <!-- <input type="current.date" value = "07/12/2022" readonly> -->
+          <input v-model="chooseDate">
         </v-card-actions>
     
 
         <v-card-actions>
-          <input type="date" v-model="date" required @change="changeDate()"/>
+          <input type="date" v-model="chooseDate" required @change="changeDate()"/>
         </v-card-actions> 
 
         <v-responsive width="100%">
@@ -299,6 +300,7 @@ data: () => ({
   id: "",
   date: new Date(),
   mode: false,
+  chooseDate: new Date().toISOString().split('T')[0]
 }),
 methods: {
   currentDate() {
@@ -366,12 +368,13 @@ methods: {
     )
   },
   changeDate(n = 0){
-    if (n != 0){
-      let ymd = this.date.split("-")
+    if (n !== 0){
+      let ymd = this.chooseDate.split("-")
       ymd[2] = parseInt(ymd[2]) + n
-      this.date = ymd.join("-")
+      this.chooseDate = ymd.join("-")
+      
     }
-    this.axios.get("http://localhost:5000/dataDate/" + this.date)
+    this.axios.get("http://localhost:5000/dataDate/" + this.chooseDate)
     .then(res => {
       if(res.data.length != 0){
         this.mode = false
