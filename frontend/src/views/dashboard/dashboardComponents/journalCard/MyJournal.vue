@@ -49,10 +49,11 @@
       <div v-show="show">
         <v-divider></v-divider>
 
+        
         <v-card-actions>
           <input type="date" v-model="date" required @change="changeDate()"/>
         </v-card-actions> 
-        
+        <v-responsive width="100%">
         <v-container class="bg-surface-variant">
                   <v-row no-gutters>
                     <v-flex d-flex xs12 sm6 md4>
@@ -151,7 +152,7 @@
                     </v-col>
                   </v-flex>
 
-                    <v-responsive width="100%"></v-responsive>
+                    <!-- <v-responsive width="100%"></v-responsive> -->
 
                     <v-flex d-flex xs12 sm6 md4>
                     <v-col>
@@ -272,6 +273,7 @@
                               Update
                           </v-btn>
                 </v-container>
+              </v-responsive>
       </div>
     </v-expand-transition>
   </v-card>

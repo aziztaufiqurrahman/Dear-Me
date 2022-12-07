@@ -3,13 +3,11 @@ const mongoose = require("mongoose");
 const app = express()
 const cors = require('cors')
 const data = require('./routes/datas')
-const user = require('./routes/users')
 
 // app.use(express.json('application/json'))
 app.use(express.urlencoded({extended: false}))
 app.use(cors())
 app.use(data)
-app.use(user)
 
 mongoose.connect('mongodb://localhost:27017/dearme', {
    useUnifiedTopology: true,
