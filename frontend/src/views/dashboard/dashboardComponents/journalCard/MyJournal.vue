@@ -50,7 +50,7 @@
         <v-divider></v-divider>
         <v-card-actions>
           <label for="start">Today : </label>
-          <input type="current.date" value="07/12/2022" readonly>
+          <input type="current.date" value = "07/12/2022" readonly>
         </v-card-actions>
     
 

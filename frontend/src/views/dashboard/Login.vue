@@ -36,9 +36,13 @@
               <v-switch label="Remember me" color="indigo"></v-switch>
             </v-card-text>
             <v-card-actions class="justify-center">
-              <v-btn :loading="loading" type="submit" color="indigo">
-                <span class="white--text px-8">Login</span>
-              </v-btn>
+              <router-link 
+              to = '/Dashboard'
+              tag = v-btn>
+              <v-btn block color="secondary" variant="contained" class="mt-4 py-4"
+            >Log In</v-btn
+          >
+        </router-link>
             </v-card-actions>
           </v-form>
         </v-card>
