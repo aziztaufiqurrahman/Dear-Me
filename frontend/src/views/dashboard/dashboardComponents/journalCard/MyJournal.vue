@@ -47,14 +47,19 @@
 
     <v-expand-transition>
       <div v-show="show">
-        <v-divider></v-divider>    
+        <v-divider></v-divider>
+        <v-card-actions>
+          <label for="start"> Today : </label>
+          <input type="current.date" :value="this.currentDate()" readonly>
+        </v-card-actions>
+    
 
         <v-card-actions>
-          <input type="date" v-model="chooseDate" required @change="changeDate()"/>
+          <input type="date" v-model="date" required @change="changeDate()"/>
         </v-card-actions> 
 
         <v-responsive width="100%">
-        <v-container class="bg-surface-variant">
+        <v-container class="bg-surface-white">
                   <v-row no-gutters>
                     <v-flex d-flex xs12 sm6 md4>
                     <v-col>
@@ -251,27 +256,30 @@
                   </v-flex>
                   </v-row>
                   <v-spacer></v-spacer>
-                          <v-btn 
-                              color="white"
+                  <v-card-actions class="justify-center">
+                          <v-btn
+                              color="black"
                               text
                               @click="deletePost()"
                           >
                               Delete
                           </v-btn>
                           <v-btn v-if="mode"
-                              color="white"
+                              color="black"
                               text
                               @click="submitPost()"
                           >
                               Submit
                           </v-btn>
                           <v-btn v-else
-                              color="white"
+                              color="black"
                               text
                               @click="updatePost()"
                           >
                               Update
                           </v-btn>
+                  </v-card-actions>
+                          
                 </v-container>
               </v-responsive>
       </div>
@@ -294,7 +302,6 @@ data: () => ({
   id: "",
   date: new Date(),
   mode: false,
-  chooseDate: new Date().toISOString().split('T')[0]
 }),
 methods: {
   currentDate() {
@@ -362,13 +369,12 @@ methods: {
     )
   },
   changeDate(n = 0){
-    if (n !== 0){
-      let ymd = this.chooseDate.split("-")
+    if (n != 0){
+      let ymd = this.date.split("-")
       ymd[2] = parseInt(ymd[2]) + n
-      this.chooseDate = ymd.join("-")
-      
+      this.date = ymd.join("-")
     }
-    this.axios.get("http://localhost:5000/dataDate/" + this.chooseDate)
+    this.axios.get("http://localhost:5000/dataDate/" + this.date)
     .then(res => {
       if(res.data.length != 0){
         this.mode = false
