@@ -13,7 +13,7 @@
             </div>
             <v-form @submit.prevent="submitHandler" ref="form">
               <v-card-text>
-                <v-text-field
+                <!-- <v-text-field
                   v-model="name"
                   :rules="nameRules"
                   type="name"
@@ -21,7 +21,7 @@
                   placeholder="Name"
                   prepend-inner-icon="mdi-account"
                   required
-                />
+                /> -->
                 <v-text-field
                   v-model="email"
                   :rules="emailRules"
@@ -45,13 +45,13 @@
                 <v-switch label="Remember me" color="indigo"></v-switch>
               </v-card-text>
               <v-card-actions class="justify-center">
-                <router-link 
+                <!-- <router-link 
                 to = '/Dashboard'
-                tag = v-btn>
-                <v-btn block color="secondary" variant="contained" class="mt-4 py-4"
-              >Singn In</v-btn
+                tag = v-btn> -->
+                <v-btn type="submit" block color="secondary" variant="contained" class="mt-4 py-4"
+              >Sign Up </v-btn
             >
-          </router-link>
+          <!-- </router-link> -->
               </v-card-actions>
             </v-form>
           </v-card>
@@ -63,12 +63,10 @@
     </v-app>
   </template>
   
-  <script>
-  
-  export default {
-    name: 'App',
-  
-  
+<script>
+import axios from 'axios'; 
+export default {
+  name: 'App',
     data: () => ({
       loading:false,
       snackbar:false,
@@ -93,6 +91,18 @@
             this.snackbar = true
           },3000)
         }
+      const URL = "http://localhost:5000/signup"
+      const data = {
+        email : this.email,
+        password : this.password
+      }
+      axios.post(URL,data).then(function
+      (response){
+        if (response.status == 400) alert ("Registrasi gagal") 
+        else { alert ("Regsitrasi berhasil")
+        window.location.href = "/login"
+      } return false
+      })
       }
     }
   };

@@ -36,21 +36,17 @@
               <v-switch label="Remember me" color="indigo"></v-switch>
             </v-card-text>
             <v-card-actions class="justify-center">
-              <router-link 
-              to = '/Dashboard'
-              tag = v-btn>
-              <v-btn color="secondary"  class="mt-4 py-4"
+              <v-btn type="submit" color="secondary"  class="mt-4 py-4"
             >Log In</v-btn
           >
-        </router-link>
         
-        <router-link 
+            <router-link 
               to = '/SignIn'
               tag = v-btn>
               <v-btn class="mt-4 py-4"
-            >Sign In</v-btn
+            >Register</v-btn
           >
-        </router-link>
+            </router-link>
             </v-card-actions>
           </v-form>
         </v-card>
@@ -63,7 +59,7 @@
 </template>
 
 <script>
-
+import axios from 'axios'; 
 export default {
   name: 'App',
 
@@ -92,6 +88,19 @@ export default {
           this.snackbar = true
         },3000)
       }
+      const URL = "http://localhost:5000/signin"
+      const data = {
+        email : this.email,
+        password : this.password
+      }
+      axios.post(URL,data).then(function
+      (response){
+        if (response.status == 400) alert ("Login gagal") 
+        else { alert ("Login berhasil")
+        localStorage.setItem ("token",response.token)
+        window.location.href = "/dashboard"
+      } return false
+      })
     }
   }
 };

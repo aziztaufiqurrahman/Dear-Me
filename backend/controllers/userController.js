@@ -9,13 +9,13 @@ module.exports = {
         const { email, password } = req.body;
         const userdata = await user.findOne({ email: email });
         if (!userdata) {
-           res.json(
+         res.status (400).json(
               "This user does not exist. Please try again or sign up for a new account."
            );
         } else {
            const correctPw = await bcrypt.compare(password, userdata.password);
            if (!correctPw) {
-              res.json("Incorrect password. Please try again.");
+            res.status (400).json("Incorrect password. Please try again.");
            } else {
               jwt.sign( userdata.toJSON() , process.env.token, (err, token) => {
                 userdata.token = token
@@ -28,11 +28,15 @@ module.exports = {
            }
         }
      },
+     
      signUp : async (req, res) => {
         const { email, password } = req.body;
+        console.log(password)
         const userExist = await user.findOne({ email: email });
         if (userExist !== null) {
-           res.json("A user with this email already exists. Please try again.");
+           res.status (400).json({
+            messsage : "A user with this email already exists. Please try again."
+           });
         } else {
            const salt = await bcrypt.genSalt(10);
            const hashPw = await bcrypt.hash(password, salt);
