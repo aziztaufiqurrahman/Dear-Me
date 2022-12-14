@@ -57,6 +57,15 @@ const router = createRouter({
           meta: {
             requiresVisitor: true,
           },
+        },
+        {
+          path: "/signin",
+          name: "signin",
+          component: () =>
+                  import("@/views/dashboard/SignIn.vue"),
+          meta: {
+            requiresVisitor: true,
+          },
         }
         // {
         //   name: "Cards",

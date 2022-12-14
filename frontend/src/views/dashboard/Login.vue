@@ -39,8 +39,16 @@
               <router-link 
               to = '/Dashboard'
               tag = v-btn>
-              <v-btn block color="secondary" variant="contained" class="mt-4 py-4"
+              <v-btn color="secondary"  class="mt-4 py-4"
             >Log In</v-btn
+          >
+        </router-link>
+        
+        <router-link 
+              to = '/SignIn'
+              tag = v-btn>
+              <v-btn class="mt-4 py-4"
+            >Sign In</v-btn
           >
         </router-link>
             </v-card-actions>
